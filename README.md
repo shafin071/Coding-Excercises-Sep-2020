@@ -7,114 +7,49 @@
 3. [JS CSS Dynamic Todo List](#JS-CSS-Dynamic-Todo-List)
 
 
-# Heading levels
-
-> This is a fixture to test heading levels
-
 <!-- toc -->
 
 ## Python Cash Registry Program
 
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
 
 
+<br>
+<hr>
+<br>
 
 ## SQL
 
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
+This section of the assignments consists of two tasks: Bus Schedule & Employees
 
 ### Bus Schedule
 
-This is an h1 heading
+#### Problem Statement
 
-This is an h1 heading
+Using the bus schedule above, write a SQL statement (query, stored procedure, or function) to calculate the time between each stop and total elapsed
+time since leaving the Sacramento station. Partial sample output below.
 
-This is an h1 heading
+#### Solution
+Wrote a stored procedure ```get_bus_schedule``` that takes in the bus number and returns the schedule table for that bus along with time between each stop and total elapsed time
+- Used ```LAG``` and ```PARTITION BY``` functionality to find the time difference between 2 consecutive stops.
+- Used ```TIMEDIFF``` and ```PARTITION BY``` to find elapsed time from start of the trip from Sacramento. 
 
-This is an h1 heading
+The procedure can be called as shown:
+``` CALL get_bus_schedule(bus_number); ``` where bus number can 1 or 2 as per the ```BusSchedule``` table
 
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
+#### Tools: 
+- MySQL
+- MySQL Workbench 8.0 CE
 
 ### Employees
 
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
+<br>
+<hr>
+<br>
 
 
 ## JS CSS Dynamic Todo List
 
-This is an h1 heading
 
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
-
-This is an h1 heading
 
 
 
