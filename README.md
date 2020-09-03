@@ -52,9 +52,9 @@ The procedure can be called as shown:
 ### Employees
 
 #### Problem Statement
-<img src="" width="450" height="300">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/employee-hierarchy.gif" width="450" height="300">
 
-<img src="" width="400" height="400">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/employee_table.JPG" width="400" height="400">
 
 Using the list of employees above, write a SQL statement (query, stored procedure, or function) to return all the employees in the organization below a
 specified manager, which may include multiple levels of employees.
@@ -63,7 +63,7 @@ Note: A sample run using Margo, EmployeeId=1 would return the entire dataset.
 
 Sample Run using: Armani, EmployeeID=2
 
-<img src="" width="400" height="140">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/employee_result_example.JPG" width="400" height="140">
 
 #### Solution
 Wrote a stored procedure ```get_employees_under_manager``` that takes in the employee ID and returns ALL the employees working under him/her. The solution achieved using the following SQL commands
@@ -76,7 +76,7 @@ The combination of these commands created a recursive query that starts from the
 The procedure can be called as shown:
 ``` CALL get_bus_schedule(bus_number); ``` where bus number can 1 or 2 as per the ```BusSchedule``` table
 
-![Result]()
+![Result](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/my_employee_result.JPG)
 
 #### Tools: 
 - MySQL
