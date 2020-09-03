@@ -1,10 +1,10 @@
 # TRC-Coding-Assignment
 
-1. [Python: Cash Registry Program](#Python:%20Cash%20Registry%20Program)
+1. [Python: Cash Registry Program](#Python:-Cash-Registry-Program)
 2. [SQL:](#SQL:)
-    * [Bus Schedule](#Bus%20Schedule)
+    * [Bus Schedule](#Bus-Schedule)
     * [Employees](#Employees)
-3. [JS/CSS: Dynamic Todo List](#JS/CSS:%20Dynamic%20Todo%20List)
+3. [JS/CSS: Dynamic Todo List](#JS/CSS:-Dynamic-Todo-List)
 
 
 # Heading levels
