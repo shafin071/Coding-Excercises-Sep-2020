@@ -13,26 +13,27 @@
 
 <!-- toc -->
 
-# Python: Cash Registry Program
+## Python: Cash Registry Program
 
 This is an h1 heading
 
-### Sub-heading
 
-This is an h2 heading
-
-#### Sub-sub-heading
-
-This is an h3 heading
-
-## Heading
+## SQL:
 
 This is an h1 heading
 
-### Sub-heading
+### Bus Schedule
 
 This is an h2 heading
 
-#### Sub-sub-heading
+### Employees
 
-This is an h3 heading
+This is an h2 heading
+
+
+## JS/CSS: Dynamic Todo List:
+
+This is an h1 heading
+
+
+
