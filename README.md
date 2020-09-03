@@ -24,7 +24,7 @@ This section of the assignments consists of two tasks: Bus Schedule & Employees
 ### Bus Schedule
 
 #### Problem Statement
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif" width="400" height="270">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif" width="450" height="300">
 
 <img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/original_table.JPG" width="400" height="400">
 
