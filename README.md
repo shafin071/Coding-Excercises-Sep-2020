@@ -142,6 +142,7 @@ Modify the HTML to include a header section linking the JS and CSS files. Feel f
    </div>
    ```
 
+**Unmodified Preview:**
 <img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/unmod.JPG" width="360" height="200">
 
 #### Solution
