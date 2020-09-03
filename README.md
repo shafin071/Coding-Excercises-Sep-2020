@@ -13,7 +13,7 @@
 
 <!-- toc -->
 
-## Python: Cash Registry Program
+# Python: Cash Registry Program
 
 This is an h1 heading
 
