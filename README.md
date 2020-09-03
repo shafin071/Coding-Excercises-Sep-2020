@@ -26,8 +26,12 @@ This section of the assignments consists of two tasks: Bus Schedule & Employees
 #### Problem Statement
 ![Bus Stop](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif)
 
+![Busschedule](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/original_table.JPG)
+
 Using the bus schedule above, write a SQL statement (query, stored procedure, or function) to calculate the time between each stop and total elapsed
 time since leaving the Sacramento station. Partial sample output below.
+
+![Example](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/example_result_table.JPG)
 
 #### Solution
 Wrote a stored procedure ```get_bus_schedule``` that takes in the bus number and returns the schedule table for that bus along with time between each stop and total elapsed time
@@ -36,6 +40,8 @@ Wrote a stored procedure ```get_bus_schedule``` that takes in the bus number and
 
 The procedure can be called as shown:
 ``` CALL get_bus_schedule(bus_number); ``` where bus number can 1 or 2 as per the ```BusSchedule``` table
+
+![Result](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/example_result_table.JPG)
 
 #### Tools: 
 - MySQL
