@@ -1,0 +1,13 @@
+*.pdf
+
+.idea
+.eggs
+venv
+**/__pycache__/
+**/*.pyc
+
+practice/
+
+
+
+

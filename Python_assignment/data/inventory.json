@@ -1,0 +1,26 @@
+
+{
+    "A": {
+		"Item": "Soda",
+		"Cost": "1.0",
+		"Volume": "4",
+		"Discount": "3.0"
+			},
+
+	"B": {
+		"Item": "Apple",
+		"Cost": "0.45",
+		"Volume": "3",
+		"Discount": "1.0"
+		},
+
+	"C": {
+		"Item": "Jelly",
+		"Cost": "3.0"
+		},
+
+	"D": {
+		"Item": "Kleenex",
+		"Cost": "6.0"
+		}
+}
