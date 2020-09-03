@@ -145,7 +145,14 @@ Modify the HTML to include a header section linking the JS and CSS files. Feel f
 <img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/unmod.JPG" width="360" height="200">
 
 #### Solution
+- Applied several trigger events, DOM and CSS manipulations to meet the requirements
+- Styled the page with CSS 
+- User can add tasks with either the ```Add``` button or ```Enter``` key
+- Attempting to enter a blank task will result in an alert
+- Checking a task will cross out the task and add the current timestamp
+- Unchecking a task will remove the strike-through and timestamp
 
+**Demo:**
 <img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/demo.gif" width="640" height="450">
 
 #### Tools: 
