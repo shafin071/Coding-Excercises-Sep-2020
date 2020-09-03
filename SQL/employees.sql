@@ -63,7 +63,7 @@ BEGIN
 	;
 	
 END //
-DELIMITER ;
+DELIMITER ;get_employees_under_managerget_employees_under_manager
 
 
 CALL get_employees_under_manager(2); -- Pass in the employee ID
