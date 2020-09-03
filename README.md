@@ -1,6 +1,6 @@
 # TRC-Coding-Assignment
 
-1. [Python: Cash Registry Program ](#heading)
+1. [Python: Cash Registry Program](#heading)
 2. [SQL:](#heading-1)
     * [Bus Schedule](#sub-heading-1)
     * [Employees](#sub-heading-1)
@@ -13,17 +13,10 @@
 
 <!-- toc -->
 
-## Heading
+## Python: Cash Registry Program
 
 This is an h1 heading
 
-### Sub-heading
-
-This is an h2 heading
-
-#### Sub-sub-heading
-
-This is an h3 heading
 
 ## Heading
 
