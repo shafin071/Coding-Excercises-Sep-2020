@@ -31,17 +31,17 @@ SELECT * FROM BusSchedule;
 
 DROP PROCEDURE IF EXISTS get_bus_schedule;
 
--- Creating Stored Procedure that can takes in the bus number and returns the schedule table for that bus
+-- Creating Stored Procedure that takes in the bus number and returns the schedule table for that bus
 
 DELIMITER //
 CREATE PROCEDURE get_bus_schedule ( IN bus_num INT)
 BEGIN
-	SELECT b1.Bus_Number, b1.station, b1.Stop_Time, 
+	SELECT b1.Bus_Number, b1.station, 
+		-- Using TIMEDIFF to find elapsed time from start of the trip from Sacramento. 
+		-- The start_time comes from the subquery below the JOIN statement
+        IFNULL(TIMEDIFF(b1.Stop_Time, b2.Start_Time), 0)  as 'Total_Travel_Time',
 		-- Using LAG and Partition by functionality to find the time difference between 2 consecutive time stamps. 
-		IFNULL(TIMEDIFF(Stop_Time, LAG(Stop_Time) OVER (partition by Bus_Number)), '00:00:00') as 'Time_to_Next_Station',
-        -- Using TIMEDIFF to find elapsed time from start of the trip from Sacramento. 
-        -- The start_time comes from the subquery below the JOIN statement
-        IFNULL(TIMEDIFF(b1.Stop_Time, b2.Start_Time), 0)  as 'Total_Travel_Time'
+		IFNULL(TIMEDIFF(Stop_Time, LAG(Stop_Time) OVER (partition by Bus_Number)), '00:00:00') as 'Time_to_Next_Station'
         
 	-- The BusSchedule is joined by a subquery table derived from BusSchedule
 	FROM BusSchedule b1
