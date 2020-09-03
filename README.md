@@ -41,7 +41,7 @@ Wrote a stored procedure ```get_bus_schedule``` that takes in the bus number and
 The procedure can be called as shown:
 ``` CALL get_bus_schedule(bus_number); ``` where bus number can 1 or 2 as per the ```BusSchedule``` table
 
-![Result](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/example_result_table.JPG)
+![Result](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/result_table.JPG)
 
 #### Tools: 
 - MySQL
