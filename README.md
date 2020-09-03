@@ -31,7 +31,7 @@ This is an h2 heading
 This is an h2 heading
 
 
-## JS/CSS: Dynamic Todo List:
+## JS/CSS: Dynamic Todo List
 
 This is an h1 heading
 
