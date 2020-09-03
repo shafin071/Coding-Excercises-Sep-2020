@@ -4,7 +4,7 @@
 2. [SQL](#SQL)
     * [Bus Schedule](#Bus-Schedule)
     * [Employees](#Employees)
-3. [JS CSS Dynamic Todo List](#JS CSS-Dynamic-Todo-List)
+3. [JS CSS Dynamic Todo List](#JS-CSS-Dynamic-Todo-List)
 
 
 # Heading levels
