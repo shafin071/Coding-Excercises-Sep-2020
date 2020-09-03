@@ -92,11 +92,9 @@ The procedure can be called as shown:
 
 ## JS CSS Dynamic Todo List
 
-<img src="" width="600" height="360">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/todo.gif" width="460" height="360">
 
 #### Problem Statement
-
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/todo.gif" width="460" height="360">
 
 Given the HTML below of a todo list implementation, write a javascript and CSS source so that
 
@@ -146,11 +144,9 @@ Modify the HTML to include a header section linking the JS and CSS files. Feel f
 
 <img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/unmod.JPG" width="360" height="200">
 
-
-
 #### Solution
 
-![Result](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/demo.gif)
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/demo.gif" width="640" height="450">
 
 #### Tools: 
 - JQuery http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
