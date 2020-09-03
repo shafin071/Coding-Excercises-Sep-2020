@@ -23,15 +23,16 @@ This section of the assignments consists of two tasks: Bus Schedule & Employees
 
 ### Bus Schedule
 
-#### Problem Statement
 <img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif" width="450" height="300">
+
+#### Problem Statement
 
 <img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/original_table.JPG" width="400" height="400">
 
 Using the bus schedule above, write a SQL statement (query, stored procedure, or function) to calculate the time between each stop and total elapsed
 time since leaving the Sacramento station. Partial sample output below.
 
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/example_result_table.JPG" width="400" height="140">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/example_result_table.JPG" width="440" height="140">
 
 #### Solution
 Wrote a stored procedure ```get_bus_schedule``` that takes in the bus number and returns the schedule table for that bus along with time between each stop and total elapsed time
@@ -51,10 +52,11 @@ The procedure can be called as shown:
 
 ### Employees
 
-#### Problem Statement
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/employee-hierarchy.gif" width="450" height="300">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/employee-hierarchy.gif" width="600" height="360">
 
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/employee_table.JPG" width="400" height="400">
+#### Problem Statement
+
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/employee_table.JPG" width="460" height="360">
 
 Using the list of employees above, write a SQL statement (query, stored procedure, or function) to return all the employees in the organization below a
 specified manager, which may include multiple levels of employees.
@@ -63,7 +65,7 @@ Note: A sample run using Margo, EmployeeId=1 would return the entire dataset.
 
 Sample Run using: Armani, EmployeeID=2
 
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/employee_result_example.JPG" width="400" height="140">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/employee_result_example.JPG" width="360" height="200">
 
 #### Solution
 Wrote a stored procedure ```get_employees_under_manager``` that takes in the employee ID and returns ALL the employees working under him/her. The solution achieved using the following SQL commands
