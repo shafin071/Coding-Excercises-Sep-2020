@@ -96,7 +96,7 @@ The procedure can be called as shown:
 
 #### Problem Statement
 
-<img src="" width="460" height="360">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/todo.gif" width="460" height="360">
 
 Given the HTML below of a todo list implementation, write a javascript and CSS source so that
 
@@ -144,18 +144,18 @@ Modify the HTML to include a header section linking the JS and CSS files. Feel f
    </div>
    ```
 
-<img src="" width="360" height="200">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/unmod.JPG" width="360" height="200">
 
 
 
 #### Solution
 
-![Result]()
+![Result](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/demo.gif)
 
 #### Tools: 
-- MySQL
-- MySQL Workbench 8.0 CE
-
+- JQuery http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
+- CSS
+- Chrome Browser
 
 
 
