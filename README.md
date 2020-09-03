@@ -76,7 +76,7 @@ Wrote a stored procedure ```get_employees_under_manager``` that takes in the emp
 The combination of these commands created a recursive query that starts from the root (employee ID arg of stored procedure) and traverses down the hierarchy of employees in a breadth-first search manner to find all node employees
  
 The procedure can be called as shown:
-``` CALL get_bus_schedule(bus_number); ``` where bus number can 1 or 2 as per the ```BusSchedule``` table
+``` CALL get_employees_under_manager(employee_ID); ``` 
 
 ![Result](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/my_employee_result.JPG)
 
@@ -89,7 +89,72 @@ The procedure can be called as shown:
 <br>
 
 
+
 ## JS CSS Dynamic Todo List
+
+<img src="" width="600" height="360">
+
+#### Problem Statement
+
+<img src="" width="460" height="360">
+
+Given the HTML below of a todo list implementation, write a javascript and CSS source so that
+
+- the user can add new tasks using the input field and add button.
+   - The complete checkbox must also be added as well as the task name to the table row.
+   - Pressing the enter key on the keyboard should
+   - Empty task names should not be added.
+   
+- the user can complete tasks by selecting the checkbox for the task.
+   - Completing the task crosses (strikethrough) out the name of the task and adds a value for time completed (browser's local timezone is fine)
+   - The format of the timestamp must be "Month Day, Year, Hour:Minutes AM/PM". For example:
+      - Feb 20, 2020, 1:37 PM
+ 
+ - Style the table as follows:
+   - Add borders for the cells
+   - Cells are evenly aligned and spaced.
+   - The rows alternate colors: #ced4ff, #fbffe6
+ 
+Modify the HTML to include a header section linking the JS and CSS files. Feel free to use jQuery. Submit the 3 files.
+
+**index.html**
+
+   ```
+   <h2>My Task List</h2>
+   <table id="todo">
+      <tr>
+         <th>Task Name</th>
+         <th>Time Completed</th>
+         <th></th>
+      </tr>
+      <tr class="row">
+         <td>Get groceries</td>
+         <td class="t_completed"></td>
+         <td class="item_complete"> <input type="checkbox"> </td>
+      </tr>
+      <tr class="row">
+         <td>Take out trash</td>
+         <td class="t_completed"></td>
+         <td class="item_complete"> <input type="checkbox"> </td>
+      </tr>
+   </table>
+   <div id="TodoAdd">
+      <input type="text" id="myInput" placeholder="Next Task">
+   <button>Add</button>
+   </div>
+   ```
+
+<img src="" width="360" height="200">
+
+
+
+#### Solution
+
+![Result]()
+
+#### Tools: 
+- MySQL
+- MySQL Workbench 8.0 CE
 
 
 
