@@ -42,6 +42,8 @@ jQuery(document).ready(function($) {
                 '<tr class="row"><td>' + newTask + '</td><td class="t_completed"></td><td class="item_complete"> <input type="checkbox"> </td></tr>'
                 );
         }
+        // Clear input field
+        $(InputFieldSelector).val("");
         
     } // End of appendNewTask
 
