@@ -24,6 +24,7 @@ This section of the assignments consists of two tasks: Bus Schedule & Employees
 ### Bus Schedule
 
 #### Problem Statement
+![Bus Stop](https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif)
 
 Using the bus schedule above, write a SQL statement (query, stored procedure, or function) to calculate the time between each stop and total elapsed
 time since leaving the Sacramento station. Partial sample output below.
