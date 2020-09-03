@@ -69,12 +69,12 @@ Sample Run using: Armani, EmployeeID=2
 
 #### Solution
 Wrote a stored procedure ```get_employees_under_manager``` that takes in the employee ID and returns ALL the employees working under him/her. The solution achieved using the following SQL commands
-- ```WITH RECURSIVE``` Common Table Expression (CTE)
+- ```WITH RECURSIVE``` on Common Table Expression (CTE)
 - ```UNION ALL``` 
 - ```JOIN```
+
 The combination of these commands created a recursive query that starts from the root (employee ID arg of stored procedure) and traverses down the hierarchy of employees in a breadth-first search manner to find all node employees
  
-
 The procedure can be called as shown:
 ``` CALL get_bus_schedule(bus_number); ``` where bus number can 1 or 2 as per the ```BusSchedule``` table
 
