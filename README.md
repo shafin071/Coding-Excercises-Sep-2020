@@ -30,7 +30,7 @@ items can be added
 
 #### Approach:
 
-- Solved the problem with a modular and layered approach with Python OOP. 
+- Solved the problem with a modular approach with Python OOP. 
 - Inventory data stored in a JSON file. 
 
 **Python_assignment/data/inventory.json**
@@ -63,10 +63,10 @@ items can be added
 }
 ```
 
-- Wrote 2 classes ```CashRegister```, ```CashRegisterHandler``` and a function ```run_cash_register```
+- Wrote 2 classes ```CashRegister```, ```DataServices``` and a function ```run_cash_register```
 - ```CashRegister``` : Calculates total bill and applies discount if applicable
-- ```CashRegisterHandler``` : Inherits ```CashRegister``` and provides validation and preprocessing on top of it. Prepares everything needed for ```CashRegister``` to calculate the bill
-- ```run_cash_register```: Sets up the program by passing all the args (```barcodes, data_file_path, object_cols, output_file_path```) to ```CashRegisterHandler```
+- ```DataServices``` : Prepares data needed for ```CashRegister``` to calculate the bill. Inherited by ```CashRegister``` 
+- ```run_cash_register```: Sets up the program by passing all the args (```barcodes, data_file_path, object_cols, output_file_path```) to ```CashRegister```
 - Output is printed to console as well as saved in a newly created json file in data folder.
 
 **Python_assignment/data/output.json**
