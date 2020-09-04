@@ -41,7 +41,7 @@ BEGIN
 		-- The start_time comes from the subquery below the JOIN statement
         IFNULL(TIMEDIFF(b1.Stop_Time, b2.Start_Time), 0)  as 'Total_Travel_Time',
 		-- Using LEAD and Partition by functionality to find the time difference between 2 consecutive time stamps. 
-		IFNULL(TIMEDIFF(LEAD(Stop_Time) OVER (partition by Bus_Number), Stop_Time), '00:00:00') as 'Time_to_Next_Station'
+		IFNULL(TIMEDIFF(LEAD(Stop_Time) OVER (partition by Bus_Number), Stop_Time), NULL) as 'Time_to_Next_Station'
         
 	-- The BusSchedule is joined by a subquery table derived from BusSchedule
 	FROM BusSchedule b1
@@ -54,7 +54,7 @@ END //
 DELIMITER ;
 
 
-CALL get_bus_schedule(1); -- Pass in the bus number
+CALL get_bus_schedule(2); -- Pass in the bus number
 
 
 
