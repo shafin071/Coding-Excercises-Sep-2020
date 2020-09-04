@@ -90,8 +90,12 @@ items can be added
 
 **Python_assignment/test/test_results/results.txt**
 ```
+test_cash_register (__main__.TestCashRegister) ... ok
+test_edge_cases (__main__.TestCashRegister) ... ok
+test_error_cases (__main__.TestCashRegister) ... ok
+
 ----------------------------------------------------------------------
-Ran 3 tests in 0.084s
+Ran 3 tests in 0.078s
 
 OK
 ```
@@ -119,7 +123,7 @@ if __name__ == '__main__':
     Save result output in a text file in test/test_results folder
     """
     with open(test_result_file, "w") as f:
-        runner = unittest.TextTestRunner(f)
+        runner = unittest.TextTestRunner(f, verbosity=2)
         unittest.main(testRunner=runner)
 
 ```
@@ -156,7 +160,7 @@ This section of the assignments consists of two tasks: Bus Schedule & Employees
 
 ### Bus Schedule
 
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif" width="550" height="300">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif" width="600" height="300">
 
 #### Problem Statement
 
