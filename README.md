@@ -11,7 +11,7 @@
 
 #### Problem Statement
 
-<img src="" width="400" height="400">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/Python/cash_reg.gif" width="400" height="400">
 
 Write a cash register program that:
 - Allows you to scan items and then computes the total at checkout. 
@@ -26,7 +26,7 @@ Demonstrate that your program works using the strings ABCD and DCCBAABB.
 Bonus Points: The code for each item should be model-driven. For example, define the map from letter to grocery item with a JSON file so more grocery
 items can be added
 
-<img src="" width="440" height="140">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/Python/table.JPG" width="400" height="400">
 
 #### Approach:
 
@@ -75,6 +75,8 @@ items can be added
 ```
 
 #### Solution:
+**Demo:**
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/Python/demo.gif" width="400" height="400">
 - The program calculated:
    - A bill of **$10.45** for order **ABCD** . No volume discount applicable
    - A bill of **$15.0** for order **DCCBAABB** . ```CashRegister``` applied the *3 for $1* volume discount for item B which brought the price down from *$15.35* to *$15.0*
