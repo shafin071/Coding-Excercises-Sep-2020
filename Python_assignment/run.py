@@ -35,7 +35,7 @@ def run_cash_register(barcodes, data_file_path, object_cols, output_file_path):
 
     # Create new output file in the output_file_path and stores the result in that file in JSON format
     # If the file is present, it'll be overwritten with updated results
-    with open(output_file_path, '+a') as f:
+    with open(output_file_path, 'w') as f:
         json.dump(output_dict, f)
 
 
