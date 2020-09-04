@@ -1,5 +1,5 @@
 import unittest
-from cash_register import CashRegisterHandler
+from cash_register_app import CashRegister
 from config import test_data_file, test_result_file, object_columns
 
 
@@ -7,7 +7,7 @@ from config import test_data_file, test_result_file, object_columns
 # tuple[0]: code,  tuple[1]: total (exception for error cases)
 test_cases = [('ABCD', 10.45), ('DCCBAABB', 15.0), ('BBBBBB', 2.0),
               ('ABABAB', 4.0), ('CCAABAA', 9.45), ('AABAABAABCDAABBA', 17.9)]
-edge_cases = [('aaaa', 3.0), ('AaBcDD', 17.45)]
+edge_cases = [('aaaa', 3.0), ('AaBcDD', 17.45), ('AB CD', 10.45)]
 error_cases = [(6789789789, Exception), ('AB.CD', Exception), ('ABXCD', Exception)]
 
 
@@ -18,8 +18,8 @@ class TestCashRegister(unittest.TestCase):
         Tests Cash Register program for regular cases to check if it calculates output correctly
         """
         for test_case in test_cases:
-            cr = CashRegisterHandler(barcode=test_case[0], data=test_data_file, object_cols=object_columns)
-            cr.call_cash_register()
+            cr = CashRegister(barcode=test_case[0], data=test_data_file, object_cols=object_columns)
+            cr.calculate_total()
             self.assertEqual(round(cr.total, 2), test_case[1])
 
     def test_edge_cases(self):
@@ -27,8 +27,8 @@ class TestCashRegister(unittest.TestCase):
         Tests Cash Register program for edge cases to check if it still calculates the correct total
         """
         for edge_case in edge_cases:
-            cr = CashRegisterHandler(barcode=edge_case[0], data=test_data_file, object_cols=object_columns)
-            cr.call_cash_register()
+            cr = CashRegister(barcode=edge_case[0], data=test_data_file, object_cols=object_columns)
+            cr.calculate_total()
             self.assertEqual(round(cr.total, 2), edge_case[1])
 
     def test_error_cases(self):
@@ -36,8 +36,8 @@ class TestCashRegister(unittest.TestCase):
         Tests Cash Register program for error cases to check if exception was raised
         """
         for error_case in error_cases:
-            cr = CashRegisterHandler(barcode=error_case[0], data=test_data_file, object_cols=object_columns)
-            self.assertRaises(error_case[1], lambda: cr.call_cash_register())
+            cr = CashRegister(barcode=error_case[0], data=test_data_file, object_cols=object_columns)
+            self.assertRaises(error_case[1], lambda: cr.calculate_total())
 
 
 if __name__ == '__main__':

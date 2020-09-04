@@ -1,21 +1,24 @@
-import pandas as pd
+from cash_register_app import DataServices
 
 
-class CashRegister:
-    def __init__(self, barcode):
+class CashRegister(DataServices):
+    def __init__(self, barcode, data, object_cols):
         """
         Performs basic functions of cash register.
         - Calculates total from a shopping list presents as string of item IDs
         - Applies volume discount if applicable
 
+        It inherits data preparation functionalities from DataServices
+
         :args: barcode [type: string]: A string of item IDs
-        :args: data_file [type: string]:  path to the local data file
+        :args: data [type: string]:  path to the local data file
+        :param object_cols: [type: list of str]: object data type columns that need to be converted to numerical
         :return: total [type: float]: calculated total of shopping list
         """
         self.barcode = barcode
-        self.df = None
         self.initial_total = 0.0
         self.total = 0.0
+        super(CashRegister, self).__init__(barcode, data, object_cols)
 
     def _apply_volume_discount(self):
         """
@@ -51,6 +54,15 @@ class CashRegister:
         :args: None
         :return: None
         """
+
+        # Load data from inventory.json
+        self.load_inventory()
+
+        # Processes both DataFrame and barcode before handing them over for calculation
+        self.preprocessor()
+
+        # Validates barcode
+        self.validate_code(self.barcode)
 
         # Iterate through the barcode and start calculating initial total
         for code in self.barcode:

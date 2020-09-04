@@ -1,2 +1,0 @@
-from .cash_register import CashRegister
-from .cash_register_handler import CashRegisterHandler

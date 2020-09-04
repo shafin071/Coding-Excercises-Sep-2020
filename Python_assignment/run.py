@@ -1,6 +1,6 @@
 import json
 
-from cash_register import CashRegisterHandler
+from cash_register_app import CashRegister
 from config import data_file, output_file, object_columns
 
 shopping_codes = ["ABCD", "DCCBAABB"]
@@ -18,12 +18,18 @@ def run_cash_register(barcodes, data_file_path, object_cols, output_file_path):
     :return: None
     """
     output_dict = {}
+
+    order_num = 0
     for barcode in barcodes:
-        print(f"\n********* Order: {barcode} *********")
-        cr = CashRegisterHandler(barcode=barcode, data=data_file_path, object_cols=object_cols)
-        cr.call_cash_register()
+        cr = CashRegister(barcode=barcode, data=data_file_path, object_cols=object_cols)
+        cr.calculate_total()
+
+        print(f"\n********* Order: {cr.barcode} *********")
         print(f"Your total after applying applicable volume discount is: ${round(cr.total, 2)}\n")
-        output_dict[cr.barcode] = round(cr.total, 2)
+
+        # Adding an order number to output in case there are multiple orders with the same barcode
+        order_num += 1
+        output_dict[order_num] = {'order_code': cr.barcode, 'order_total': round(cr.total, 2)}
 
     # Create new output file in the output_file_path and stores the result in that file in JSON format
     # If the file is present, it'll be overwritten with updated results
