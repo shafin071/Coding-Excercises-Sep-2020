@@ -10,8 +10,8 @@ class CashRegister(DataServices):
 
         It inherits data preparation functionalities from DataServices
 
-        :args: barcode [type: string]: A string of item IDs
-        :args: data [type: string]:  path to the local data file
+        :param: barcode [type: string]: List of shopping codes where each element is a string of item IDs
+        :param: data [type: string]:  path to the local data file
         :param object_cols: [type: list of str]: object data type columns that need to be converted to numerical
         :return: total [type: float]: calculated total of shopping list
         """

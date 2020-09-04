@@ -3,6 +3,8 @@ import json
 from cash_register_app import CashRegister
 from config import data_file, output_file, object_columns
 
+
+# Passing in multiple shopping codes
 shopping_codes = ["ABCD", "DCCBAABB"]
 
 
@@ -11,7 +13,7 @@ def run_cash_register(barcodes, data_file_path, object_cols, output_file_path):
     - Calls the Cash Register Handler and passes required params to it:
     - Writes calculated total to a json file
 
-    :param barcodes: [type: list of str]: Each element is a string of item IDs
+    :param barcodes: [type: list of str]: List of shopping codes where each element is a string of item IDs
     :param data_file_path: [type: string]:  path to the local data file
     :param object_cols: [type: list of str]: object data type columns that need to be converted to numerical
     :param output_file_path: [type: string]:  path to the output data file
@@ -33,7 +35,7 @@ def run_cash_register(barcodes, data_file_path, object_cols, output_file_path):
 
     # Create new output file in the output_file_path and stores the result in that file in JSON format
     # If the file is present, it'll be overwritten with updated results
-    with open(output_file_path, 'w') as f:
+    with open(output_file_path, '+a') as f:
         json.dump(output_dict, f)
 
 
