@@ -66,12 +66,15 @@ items can be added
 - Wrote 2 classes ```CashRegister```, ```DataServices``` and a function ```run_cash_register```
 - ```CashRegister``` : Calculates total bill and applies discount if applicable
 - ```DataServices``` : Prepares data needed for ```CashRegister``` to calculate the bill. Inherited by ```CashRegister``` 
-- ```run_cash_register```: Sets up the program by passing all the args (```barcodes, data_file_path, object_cols, output_file_path```) to ```CashRegister```
-- Output is printed to console as well as saved in a newly created json file in data folder.
+- ```run_cash_register```: 
+	- Sets up the program by passing all the args (```barcodes, data_file_path, object_cols, output_file_path```) to ```CashRegister```
+	- For ```barcodes```, it can pass multiple shopping codes 
+- Output was printed to console as well as stored in a newly created json file in data folder.
+- An order number was added to the JSON file to avoid conflict in same code orders. Multiple people can buy the same combination of items
 
 **Python_assignment/data/output.json**
 ```
-{"ABCD": 10.45, "DCCBAABB": 15.0}
+{"1": {"order_code": "ABCD", "order_total": 10.45}, "2": {"order_code": "DCCBAABB", "order_total": 15.0}}
 ```
 
 #### Solution:
