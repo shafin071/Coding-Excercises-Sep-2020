@@ -10,7 +10,7 @@ class DataServices:
 
 
         :param df: [type: Pandas DataFrame]: It will hold the loaded data from inventory.json
-        :param barcode: [type: string]: List of shopping codes where each element is a string of item IDs
+        :param barcode: [type: string]: Each character in the string is an item ID
         :param data: [type: string]:  path to the local data file
         :param object_cols: [type: list of str]: object data type columns that need to be converted to numerical
         :return: None

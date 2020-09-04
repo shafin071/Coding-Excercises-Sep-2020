@@ -45,5 +45,5 @@ if __name__ == '__main__':
     Save result output in a text file in test/test_results folder
     """
     with open(test_result_file, "w") as f:
-        runner = unittest.TextTestRunner(f)
+        runner = unittest.TextTestRunner(f, verbosity=2)
         unittest.main(testRunner=runner)
