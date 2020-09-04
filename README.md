@@ -79,7 +79,7 @@ items can be added
 
 #### Solution:
 **Demo:**
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/Python/demo.gif" width="1100" height="650">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/Python/demo.gif" width="1200" height="650">
 - The program calculated:
    - A bill of **$10.45** for order **ABCD** . No volume discount applicable
    - A bill of **$15.0** for order **DCCBAABB** . ```CashRegister``` applied the *3 for $1* volume discount for item B which brought the price down from *$15.35* to *$15.0*
