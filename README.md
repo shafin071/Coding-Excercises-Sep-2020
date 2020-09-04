@@ -11,7 +11,7 @@
 
 #### Problem Statement
 
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/Python/cash_reg.gif" width="520" height="400">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/Python/cash_reg.gif" width="420" height="300">
 
 Write a cash register program that:
 - Allows you to scan items and then computes the total at checkout. 
