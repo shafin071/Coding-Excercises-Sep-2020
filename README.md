@@ -156,7 +156,7 @@ This section of the assignments consists of two tasks: Bus Schedule & Employees
 
 ### Bus Schedule
 
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif" width="450" height="300">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif" width="550" height="300">
 
 #### Problem Statement
 
@@ -225,7 +225,7 @@ The procedure can be called as shown:
 
 ## JS CSS Dynamic Todo List
 
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/todo.gif" width="460" height="360">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/todo_list.gif" width="460" height="360">
 
 #### Problem Statement
 
