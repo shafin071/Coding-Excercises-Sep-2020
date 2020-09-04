@@ -160,7 +160,7 @@ This section of the assignments consists of two tasks: Bus Schedule & Employees
 
 ### Bus Schedule
 
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif" width="550" height="300">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/SQL/bus_stop.gif" width="600" height="300">
 
 #### Problem Statement
 
