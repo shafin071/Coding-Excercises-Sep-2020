@@ -225,7 +225,7 @@ The procedure can be called as shown:
 
 ## JS CSS Dynamic Todo List
 
-<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/todo_list.gif" width="460" height="360">
+<img src="https://github.com/shafin071/TRC-Coding-Assignment/blob/master/Assets/JS_CSS/todo_list.gif" width="360" height="260">
 
 #### Problem Statement
 
