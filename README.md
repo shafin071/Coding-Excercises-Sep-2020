@@ -1,4 +1,4 @@
-# TRC-Coding-Assignment
+# Coding-Excercises
 
 1. [Python Cash Registry Program](#Python-Cash-Registry-Program)
 2. [SQL](#SQL)
